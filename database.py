@@ -13,7 +13,10 @@ def add_server_list(chatId, server, name):
             "name" : name, 
             "category" : DEFAULT_CATEGORY
         }
-        server_dict[str(chatId)] = {server : server_info}
+        try:
+            server_dict[str(chatId)][server] = server_info
+        except KeyError:
+            server_dict[str(chatId)] = {server : server_info}
     
 def delete_server_from_list(chatId, server):
     server_list = server_dict.get(str(chatId), {})
@@ -143,3 +146,7 @@ def json_loadInfo():
             load_categories()
     except:
         json_putInfo()
+
+add_server_list(123, "server1", "server1name")
+add_server_list(123, "server2", "server2name")
+print(server_dict)
