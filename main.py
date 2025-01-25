@@ -124,7 +124,7 @@ def show_help(message):
 <b>/list(/servers) - show your list of servers</b>\n\
 <b>/delserver(/delete) Name or ip:port - delete server from your list</b>\n\
 <b>/category(/createcategory) category name - set the category for the server</b>\n\
-<b>/setcategory - choose category for server</b>\
+<b>/setcategory - choose category for server</b>\n\
 <b>/delcategory - delete your category</b>'
     bot.send_message(message.chat.id, msgg, parse_mode='html')
 
