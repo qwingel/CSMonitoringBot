@@ -146,7 +146,3 @@ def json_loadInfo():
             load_categories()
     except:
         json_putInfo()
-
-add_server_list(123, "server1", "server1name")
-add_server_list(123, "server2", "server2name")
-print(server_dict)
