@@ -1,0 +1,67 @@
+ru:
+  language: "Установлен Русский язык"
+  greeting: "Привет! Напиши /addserver <адрес сервера> для получения информации о сервере. Напиши /info чтобы увидеть больше информации."
+  format_example: "Проверь формат сообщения. Например, /addserver 46.174.52.184:27015 HNS"
+  unavailable: " > недоступен"
+  added_to_list: " добавлен в список серверов"
+  no_servers: "У вас нет серверов. Добавьте их с помощью /addserver <адрес сервера>"
+  delserver_format_example: "Проверьте формат сообщения. Например:\n/delserver 46.174.52.184:27015\n/delserver [Beauty] >> Hide-and-Seek public"
+  server: "Сервер"
+  deleted: "был удален"
+  not_found: "не найден"
+  category_format_example: "Проверьте формат сообщения. Например:\n/category KZ\n"
+  category: "Категория"
+  created: "была создана"
+  already_exists: "уже существует"
+  no_categories: "У вас нет категорий. Используйте /category <название_категории>"
+  select_category: "Выберите категорию, в которую хотите добавить сервер"
+  select_category_no_categories: "У вас нет категорий. Используйте /category <название_категории>"
+  delcategory_format_example: "Проверьте формат сообщения. Например:\n/delcategory KZ\n"
+  deleted_category: "была удалена"
+  not_exists: "не существует"
+  added_to_the: "добавлен в"
+  help: |
+    <b>/addserver(/new) ip:port CATEGORY - добавить сервер в ваш список (CATEGORY - необязательный параметр)</b>\n
+    <b>/list(/servers) - показать ваш список серверов</b>\n
+    <b>/delserver(/delete) Name или ip:port - удалить сервер из вашего списка</b>\n
+    <b>/category(/createcategory) название_категории - установить категорию для сервера</b>\n
+    <b>/setcategory - выбрать категорию для сервера</b>\n
+    <b>/delcategory - удалить вашу категорию</b>\n
+    <b>/language(/lang) - изменить язык</b>
+  choose_category: "Выберите категорию"
+  choose_server: "Выберите сервер"
+  back: "Назад"
+
+en:
+  language: "Your language now is English"
+  greeting: "Hello!\nUse /addserver <server address>\nto get server information\nType /help for see more info"
+  format_example: "Check the message format.\nFor example:\n/addserver 46.174.52.184:27015 HNS"
+  unavailable: " > is not avaible"
+  added_to_list: " added to the server list"
+  no_servers: "You have no one server in list.\nUse /addserver <server address>"
+  delserver_format_example: "Check the message format.\nFor example:\n/delserver 46.174.52.184:27015\n/delserver [Beauty] >> Hide-and-Seek public"
+  server: "Server"
+  deleted: "was delete"
+  not_found: "not found"
+  category_format_example: "Check the message format.\nFor example:\n/category KZ\n"
+  category: "Category"
+  created: "was created"
+  already_exists: "is already exists"
+  no_categories: "You don't have any categories. Use /category <category_name>"
+  select_category: "Select the category in which you want to add the server"
+  select_category_no_categories: "You don't have any categories. Use /category <category_name>"
+  delcategory_format_example: "Check the message format.\nFor example:\n/delcategory KZ\n"
+  deleted_category: "was deleted"
+  not_exists: "is not exists"
+  added_to_the: "added to the"
+  help: |
+    <b>/addserver(/new) ip:port CATEGORY - add server to the your list(CATEGORY is optional parameter)</b>\n
+    <b>/list(/servers) - show your list of servers</b>\n
+    <b>/delserver(/delete) Name or ip:port - delete server from your list</b>\n
+    <b>/category(/createcategory) category name - set the category for the server</b>\n
+    <b>/setcategory - choose category for server</b>\n
+    <b>/delcategory - delete your category</b>\n
+    <b>/language(/lang) - change language</b>
+  choose_category: "Choose category"
+  choose_server: "Choose server"
+  back: "Back"
