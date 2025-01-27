@@ -13,6 +13,7 @@ def start(message):
 def add_server(message):
     lst_split = message.text.split()
     length = len(lst_split)
+    category = None
     if length == 2:
         cmd, ip = lst_split
     elif length == 3:
@@ -28,7 +29,7 @@ def add_server(message):
     else:
         name = server.server_name
         add_server_list(message.chat.id, ip, name)
-        if category:
+        if category is not None:
             create_new_category(message.chat.id, category)
             set_server_category(message.chat.id, ip, category)
 
@@ -220,10 +221,10 @@ if __name__ == '__main__':
     addServerToCategory = False
     last_category = DEFAULT_CATEGORY
     print('TeleBot is starting...')
-    # while True:
-    #     try:
-    bot.polling(none_stop=True)
-        # except:
-        #     json_putInfo()
-        #     SaveLanguages()
-        #     sleep(0.3)
+    while True:
+        try:
+            bot.polling(none_stop=True)
+        except:
+            json_putInfo()
+            SaveLanguages()
+            sleep(0.3)
