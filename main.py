@@ -129,6 +129,7 @@ def show_help(message):
 def change_language(message):
     lang = RU if get_user_language(message.chat.id) == ENG else ENG
     set_user_language(message.chat.id, lang)
+    showReplyButtons(message.chat.id)
     bot.send_message(message.chat.id, get_phrase(get_user_language(message.chat.id), 'language'))
 
 @bot.message_handler(content_types=['text'])
@@ -221,10 +222,10 @@ if __name__ == '__main__':
     addServerToCategory = False
     last_category = DEFAULT_CATEGORY
     print('TeleBot is starting...')
-    while True:
-        try:
-            bot.polling(none_stop=True)
-        except:
-            json_putInfo()
-            SaveLanguages()
-            sleep(0.3)
+    # while True:
+    #     try:
+    bot.polling(none_stop=True)
+        # except:
+        #     json_putInfo()
+        #     SaveLanguages()
+        #     sleep(0.3)
