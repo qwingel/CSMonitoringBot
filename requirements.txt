@@ -1,3 +1,4 @@
 pyTelegramBotAPI
 python-a2s
 python-dotenv
+pyyaml
