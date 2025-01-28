@@ -11,7 +11,6 @@ phrases = dict()
 def set_user_language(chatId, lang=ENG):
     global languages
     languages[str(chatId)] = lang
-    print(languages)
 
 def get_user_language(chatId):
     try:
@@ -33,7 +32,7 @@ def LoadLanguages():
         with open('lang.json', 'r') as f:
             global languages
             languages = json.load(f)
-            print(languages)
+            
     except:
         SaveLanguages()
 

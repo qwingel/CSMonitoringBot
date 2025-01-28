@@ -6,9 +6,25 @@
         }
     },
     "1421814406": {
+        "62.140.250.10:27015": {
+            "name": "! !--Good_Half-Life_Server--! !",
+            "category": "hl"
+        },
         "46.174.52.184:27015": {
             "name": "[Beauty] >> Hide-and-Seek public",
             "category": "HNS"
+        },
+        "46.174.52.25:27205": {
+            "name": "GES_YO! The Deathmatch server",
+            "category": "hl2"
+        },
+        "194.93.2.94:27777": {
+            "name": " [CS2] FIVE-GAMING.RU | MIRAGE #1 | 14+",
+            "category": "global"
+        },
+        "46.174.48.218:28043": {
+            "name": "CS2 PUBLIC #43 [RU] \u2014 CYBERSHOKE.NET (ONLY MIRAGE)",
+            "category": "cs2"
         }
     }
 }
