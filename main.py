@@ -222,10 +222,10 @@ if __name__ == '__main__':
     addServerToCategory = False
     last_category = DEFAULT_CATEGORY
     print('TeleBot is starting...')
-    # while True:
-    #     try:
-    bot.polling(none_stop=True)
-        # except:
-        #     json_putInfo()
-        #     SaveLanguages()
-        #     sleep(0.3)
+    while True:
+        try:
+            bot.polling(none_stop=True)
+        except:
+            json_putInfo()
+            SaveLanguages()
+            sleep(0.3)
