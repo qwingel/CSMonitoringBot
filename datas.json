@@ -1,1 +1,8 @@
-{}
+{
+    "chat_id": {
+        "server_address": {
+            "name": "server_name",
+            "category": "server_category"
+        }
+    }
+}
