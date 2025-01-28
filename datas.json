@@ -4,5 +4,11 @@
             "name": "server_name",
             "category": "server_category"
         }
+    },
+    "1421814406": {
+        "46.174.52.184:27015": {
+            "name": "[Beauty] >> Hide-and-Seek public",
+            "category": "HNS"
+        }
     }
 }

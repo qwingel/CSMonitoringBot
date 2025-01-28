@@ -137,7 +137,7 @@ def message_handler(message):
     text = message.text
     ip = get_server_by_name(message.chat.id, text)
     categ = get_categories(message.chat.id)
-    global last_category, addServerToCategory
+    global last_category, addServerToCategory, showCategoryReplyButton
     if ip:
         if addServerToCategory:
             if set_server_category(message.chat.id, ip, last_category):
@@ -166,7 +166,7 @@ Click to copy server ip\n\
 
     elif categ and text in categ:
         last_category = text
-        global showCategoryReplyButton
+        showCategoryReplyButton
         showCategoryReplyButton = False
         if addServerToCategory: 
             showReplyButtons(message.chat.id)
@@ -178,6 +178,7 @@ Click to copy server ip\n\
         showReplyButtons(message.chat.id)
 
     elif text == DEFAULT_CATEGORY:
+        showCategoryReplyButton = False
         info_list(message)
 
 def showReplyButtons(chatId, category=DEFAULT_CATEGORY):
@@ -222,10 +223,10 @@ if __name__ == '__main__':
     addServerToCategory = False
     last_category = DEFAULT_CATEGORY
     print('TeleBot is starting...')
-    while True:
-        try:
-            bot.polling(none_stop=True)
-        except:
-            json_putInfo()
-            SaveLanguages()
-            sleep(0.3)
+    # while True:
+    #     try:
+    bot.polling(none_stop=True)
+        # except:
+        #     json_putInfo()
+        #     SaveLanguages()
+        #     sleep(0.3)
